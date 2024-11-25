@@ -1,0 +1,22 @@
+{
+  "name": "Typesense",
+  "version": "0.0.1",
+  "author": "<a href='https://github.com/moveyourdigital'>Move Your Digital</a>",
+  "author_profile": "https://github.com/moveyourdigital",
+  "homepage": "https://github.com/moveyourdigital/wp-typesense",
+  "download_link": "https://github.com/moveyourdigital/wp-typesense/archive/refs/heads/main.zip",
+  "support_url": "https://github.com/moveyourdigital/wp-typesense/issues",
+  "requires": "5.8",
+  "tested": "6.5.3",
+  "requires_php": "7.4",
+  "last_updated": "2024-04-09 16:45:00",
+  "sections": {
+    "description": "Feed a Typesense server with posts.",
+    "installation": "Click the <i>activate</i> button. Configure Search under General Settings.",
+    "changelog": "<h4>0.0.1</h4><ol><li>Initial release.</li></ol>"
+  },
+  "banners": {
+    "low": "https://github.com/moveyourdigital/wp-typesense/raw/main/.wordpress-org/banner-772x250.jpg",
+    "high": "https://github.com/moveyourdigital/wp-typesense/raw/main/.wordpress-org/banner-1544x500.jpg"
+  }
+}
