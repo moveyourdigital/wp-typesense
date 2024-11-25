@@ -3,7 +3,7 @@
  * Plugin Name:     Typesense
  * Plugin URI:      https://github.com/moveyourdigital/wp-typesense
  * Description:     Feed a Typesense server with posts
- * Version:         0.0.1
+ * Version:         0.0.2
  * Requires PHP:    7.4
  * Author:          Move Your Digital, Inc.
  * Author URI:      https://moveyourdigital.com

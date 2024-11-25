@@ -1,0 +1,24 @@
+.typesenseserver-pass-wrap .wp-pwd {
+    display: inline-block;
+    margin-top: 0;
+}
+
+#typesense-token {
+    padding-right: 2.5rem;
+}
+
+.typesenseserver-pass-wrap .button.wp-hide-pw,
+.typesenseserver-pass-wrap .button.wp-hide-pw[disabled] {
+    background: 0 0 !important;
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    line-height: 2;
+    width: 2.5rem;
+    min-width: 40px;
+    margin: 0;
+    padding: 0 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

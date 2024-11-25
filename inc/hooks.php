@@ -11,9 +11,10 @@ namespace Typesense;
  * Get option and fall back to constant
  *
  * @param string $field lowercase name of the field.
+ * @param string $default_value default in case of missing value.
  * @return string|null
  */
-function get_config( $field ) {
+function get_config( $field, $default_value = null ) {
 	$value = get_option( $field );
 
 	if ( $value ) {
@@ -25,6 +26,8 @@ function get_config( $field ) {
 	if ( defined( $field ) ) {
 		return constant( $field );
 	}
+
+	return $default_value;
 }
 
 /**
@@ -34,9 +37,9 @@ function get_config( $field ) {
  * @param \WP_Post $post The post.
  */
 function index_post( int $post_id, \WP_Post $post ) {
-	$url        = get_config( 'typesense_url' );
+	$url        = get_config( 'typesense_url', 'http://localhost' );
 	$token      = get_config( 'typesense_api_key' );
-	$collection = get_config( 'typesense_collection' );
+	$collection = get_config( 'typesense_collection', 'wp_posts' );
 
 	$body = $post->to_array();
 
@@ -84,9 +87,9 @@ function index_post( int $post_id, \WP_Post $post ) {
  * @param \WP_Post $post The post.
  */
 function delete_post( int $post_id, \WP_Post $post ) {
-	$url        = get_config( 'typesense_url' );
+	$url        = get_config( 'typesense_url', 'http://localhost' );
 	$token      = get_config( 'typesense_api_key' );
-	$collection = get_config( 'typesense_collection' );
+	$collection = get_config( 'typesense_collection', 'wp_posts' );
 
 	/**
 	 * Fires before Typesense receives a post delete.
